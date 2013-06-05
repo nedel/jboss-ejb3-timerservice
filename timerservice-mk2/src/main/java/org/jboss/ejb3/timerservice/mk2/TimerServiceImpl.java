@@ -915,7 +915,8 @@ public class TimerServiceImpl implements TimerService
       {
          scheduleFuture.cancel(false);
       }
-      
+
+      scheduledTimerFutures.remove(handle);
    }
    
    private boolean isSingletonBeanInvocation()
